@@ -5,6 +5,8 @@ import SusnetKits from "../components/Landing/SusnetKits"
 import SusnetComponent from "../components/Landing/SusnetComponent"
 import Plans from "../components/Landing/Plans"
 import QuizSection from "../components/Landing/QuizSection"
+import ContactSection from "../components/Landing/ContactSection"
+import ContactCTASection from "../components/Landing/ContactCTASection"
 
 const Landing = () =>
 {
@@ -17,6 +19,8 @@ const Landing = () =>
       {/* <SusnetKits /> */}
       <Plans />
       <QuizSection />
+      <ContactCTASection />
+      {/* <ContactSection /> */}
     </>
   )
 }
