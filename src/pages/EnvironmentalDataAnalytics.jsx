@@ -158,9 +158,9 @@ const EnvironmentalDataAnalytics = () =>
 
       <main className="container mx-auto px-4 py-12">
         <div className="grid gap-12">
-          <section className="container mx-auto w-full lg:!w-[88%] lg:px-8 px-2 py-8">
+          <section className="container mx-auto w-full lg:!w-[88%]  lg:px-8 px-2 py-8">
             <h2 className="text-4xl font-bold text-center mb-8 prose">How It Works</h2>
-            <p className="text-xl mb-8 font-bold prose">Please enter the following</p>
+            <p className="text-lg mb-8 font-semibold prose">Please enter the following, and we will provide you with a detailed weather forecast graph.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-12">
               <div className=" text-white  overflow-hidden">
                 <div className="py-4 px-3 text-center bg-[#2A7E9B] rounded-t-[10px] border-3 border-[#1B1014]  font-semibold text-2xl md:text-3xl">
