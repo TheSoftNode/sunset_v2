@@ -80,9 +80,10 @@ const SUSNET = () =>
               className="text-gray-300 text-sm tracking-tight xs:!text-lg prose text-justify sm:!tracking-tighter leading-relaxed mb-8"
               variants={itemVariants}
             >
-              SusNet is HitoAI's flagship product, an AI-powered sustainable energy management system engineered to optimize energy usage.
-              As the global sustainable energy management market expands and artificial intelligence technology advances, HitoAI Limited
-              stands at the industry's forefront.
+              SusNet is a cutting-edge solution that integrates advanced artificial intelligence with 
+              state-of-the-art hardware to provide a comprehensive energy management system. Our network 
+              includes a variety of wireless devices that work together seamlessly to monitor, control, 
+              and optimize your energy consumption.
             </motion.p>
             <motion.h3
               className="font-semibold text-2xl text-orange-300 mb-6"

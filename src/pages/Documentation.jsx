@@ -92,7 +92,7 @@ const Documentation = () =>
                     >
                         <h2 className="text-2xl font-semibold text-cyan-600 mb-4">{section.title}</h2>
                         {section.description && (
-                            <p className="text-gray-600 mb-4 italic">{section.description}</p>
+                            <p className="text-gray-700 font-semibold text-sm mb-4 italic">{section.description}</p>
                         )}
                         <div className="flex flex-col lg:flex-row items-start justify-between">
                             <div className="w-full lg:w-3/5 pr-0 lg:pr-8">
