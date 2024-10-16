@@ -85,8 +85,6 @@ const Header = () =>
               underlineStyles="absolute left-0 top-full h-[2px] bg-orange-500 w-full"
             />
 
-
-
             <motion.div variants={itemVariants} className="mr-1">
               <LoginButton />
             </motion.div>

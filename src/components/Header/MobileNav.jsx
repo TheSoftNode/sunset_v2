@@ -60,13 +60,7 @@ const MobileNav = () =>
             <SheetTitle className="text-3xl font-bold text-teal-600 text-center">
               Sunset
             </SheetTitle>
-            {/* <motion.button
-              whileHover={{ scale: 1.1, rotate: 90 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={() => setIsOpen(false)}
-            >
-              <X className="text-gray-600 hover:text-teal-600" />
-            </motion.button> */}
+
           </div>
           <p id="mobile-nav-description" className="sr-only">
             The navbar for mobile display
