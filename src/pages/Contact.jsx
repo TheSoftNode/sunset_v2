@@ -43,7 +43,7 @@ const Contact = () =>
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                                 <div>
-                                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                    <label htmlFor="name" className="block text-sm font-medium text-gray-800 mb-1">Name</label>
                                     <input
                                         type="text"
                                         id="name"
@@ -55,7 +55,7 @@ const Contact = () =>
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                    <label htmlFor="email" className="block text-sm font-medium text-gray-800 mb-1">Email</label>
                                     <input
                                         type="email"
                                         id="email"
@@ -68,7 +68,7 @@ const Contact = () =>
                                 </div>
                             </div>
                             <div>
-                                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                                <label htmlFor="subject" className="block text-sm font-medium text-gray-800 mb-1">Subject</label>
                                 <input
                                     type="text"
                                     id="subject"
@@ -80,7 +80,7 @@ const Contact = () =>
                                 />
                             </div>
                             <div>
-                                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <label htmlFor="message" className="block text-sm font-medium text-gray-800 mb-1">Message</label>
                                 <textarea
                                     id="message"
                                     name="message"
@@ -106,9 +106,9 @@ const Contact = () =>
 
                         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3">
                             {[
-                                { icon: Mail, title: 'Email', content: 'contact@susnet.com' },
-                                { icon: Phone, title: 'Phone', content: '+1 (555) 123-4567' },
-                                { icon: MapPin, title: 'Address', content: '123 Eco Street, Green City, 12345' }
+                                { icon: Mail, title: 'Email', content: 'info@hitoai.com' },
+                                { icon: Phone, title: 'Phone', content: '+353 899832147' },
+                                { icon: MapPin, title: 'Address', content: 'HITOAI Limited Sandyford, Dublin 18 Dublin, Ireland' }
                             ].map((item) => (
                                 <div key={item.title} className="flex items-center">
                                     <div className="flex-shrink-0">
