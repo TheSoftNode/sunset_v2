@@ -5,6 +5,7 @@ import Energybill from "../pages/Energybill";
 import Login from "../components/Auth/Login";
 import Signup from "../components/Auth/Signup";
 import EnvironmentalDataAnalytics from '../pages/EnvironmentalDataAnalytics';
+import Contact from '../pages/Contact';
 
 
 const Routers = () =>
@@ -15,6 +16,7 @@ const Routers = () =>
         <Route path="/documentation" element={<Documentation />} />
         <Route path="/environmentalDataAnalytics" element={<EnvironmentalDataAnalytics />} />
         <Route path="/energybill" element={<Energybill />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
     </Routes>
