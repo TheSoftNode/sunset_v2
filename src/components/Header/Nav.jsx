@@ -7,6 +7,7 @@ const links = [
   { path: "/documentation", name: "Instructions" },
   { path: "/environmentalDataAnalytics", name: "SusNet Weather Forecast Tool" },
   { path: "/energybill", name: "Saved Energy/Bill" },
+  { path: "/contact", name: "Contact Us" },
 ];
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles, onLinkClick }) =>
