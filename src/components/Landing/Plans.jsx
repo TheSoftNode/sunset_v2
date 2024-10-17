@@ -155,29 +155,6 @@ const PricingPlans = () =>
         Tailored solutions for home and business. Flexible, powerful, and designed to grow with you.
       </motion.p>
 
-      {/* Toggle for Home/Business */}
-      {/* <div className="flex justify-center items-center mb-12">
-        <span className={`mr-4 text-lg ${isHome ? 'font-semibold text-cyan-700' : 'text-gray-500'}`}>Home</span>
-        <motion.div
-          onClick={() => setIsHome(!isHome)}
-          className={`relative inline-flex items-center h-8 w-16 rounded-full cursor-pointer ${isHome ? 'bg-cyan-600' : 'bg-cyan-600'}`}
-          whileTap={{ scale: 0.95 }}
-        >
-          <motion.span
-            layout
-            transition={{
-              type: "spring",
-              stiffness: 500,
-              damping: 30
-            }}
-            className="inline-block w-6 h-6 bg-white rounded-full shadow-lg"
-            animate={{
-              translateX: isHome ? '10%' : '150%',
-            }}
-          />
-        </motion.div>
-        <span className={`ml-4 text-lg ${!isHome ? 'font-semibold text-cyan-700' : 'text-gray-500'}`}>Business</span>
-      </div> */}
 
       <div className="flex justify-center items-center mb-12">
         <span className={`mr-4 text-lg ${isHome ? 'font-semibold text-cyan-700' : 'text-gray-500'}`}>Home</span>
@@ -205,7 +182,7 @@ const PricingPlans = () =>
 
       {/* Pricing Cards */}
       <motion.div
-        className="flex flex-col md:flex-row gap-12 w-full max-w-6xl px-4 justify-center items-stretch"
+        className="flex flex-wrap gap-12 w-full max-w-6xl px-4 justify-center items-center"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -214,7 +191,7 @@ const PricingPlans = () =>
           {plans.map((plan, idx) => (
             <motion.div
               key={idx}
-              className="rounded-lg p-6 shadow-lg flex-1 bg-white border border-teal-200 relative flex flex-col max-w-sm w-full"
+              className="rounded-lg min-w-[250px] p-6 shadow-lg flex-1 bg-white border border-teal-200 relative flex flex-col max-w-sm w-full"
               variants={cardVariants}
               whileHover={{
                 y: -5,

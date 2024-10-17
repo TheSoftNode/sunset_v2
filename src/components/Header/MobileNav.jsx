@@ -83,9 +83,9 @@ const MobileNav = () =>
             </div>
             <motion.div
               variants={itemVariants}
-              className="mt-12 text-center text-sm text-gray-500"
+              className="mt-12 mb-4 text-center text-sm text-gray-500"
             >
-              © 2024 Sunset. All rights reserved.
+              © 2024 Susnet - HitoAi. All rights reserved.
             </motion.div>
           </div>
         </motion.div>
