@@ -1,4 +1,5 @@
 
+import { Superscript } from 'lucide-react';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -46,8 +47,10 @@ const Signup = () =>
         <div className='min-h-[500px] pt-3 flex items-start justify-center bg-gradient-to-r from-gray-100 to-white p-4'>
             <form onSubmit={handleSubmit} className='bg-white shadow-lg my-3 mx-auto w-full max-w-sm p-10 rounded-lg border border-transparent transition duration-300 transform hover:scale-105 hover:shadow-xl'>
                 <h1 className='font-bold text-2xl py-4 text-center bg-clip-text text-transparent bg-gradient-to-r from-teal-500 via-green-500 to-blue-500'>
-                    Register Your SusNet Hardware
+                    Register Your SusNet<sup className="text-[0.8rem] font-serif font-bold align-super tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-500 via-green-500 to-blue-500">TM</sup>
+                    <span className='ml-3 mt-2'>Hardware</span>
                 </h1>
+
 
                 {/* {error && <p className="text-red-500 text-center mb-4">{error}</p>} */}
                 {status && <p className='text-pink-500 text-sm font-semibold p-4 text center'>{status}</p>}
