@@ -26,7 +26,7 @@ const Contact = () =>
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-teal-50 via-white to-teal-100 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen border bg-gradient-to-br from-teal-50 via-white to-teal-100 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -40,7 +40,7 @@ const Contact = () =>
                             We're here to help and answer any question you might have. We look forward to hearing from you.
                         </p>
 
-                        <form onSubmit={handleSubmit} className="space-y-6 border">
+                        <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-gray-800 mb-1">Name</label>
