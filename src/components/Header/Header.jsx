@@ -62,7 +62,7 @@ const Header = () =>
         ${location.pathname === "/" && ""}
       `}
     >
-      <div className=" w-full mx-auto px-4 sm:!pl-8 sm:!pr-2">
+      <div className=" w-full mx-auto px-4 sm:!pl-8 sm:!pr-4">
         <div className="flex justify-between items-center">
           <Link to={"/"}>
             <motion.img

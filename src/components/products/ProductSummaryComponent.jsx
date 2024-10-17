@@ -77,7 +77,7 @@ const ProductSummaryComponent = ({
 
     return (
         <motion.div
-            className="w-full bg-gradient-to-br from-teal-900 via-cyan-800 to-blue-900 py-8 px-4 sm:px-6 lg:px-8 flex flex-col items-center"
+            className="w-full relative bg-gradient-to-br from-teal-900 via-cyan-800 to-blue-900 py-8 px-4 sm:px-6 lg:px-8 flex flex-col items-center"
             initial="hidden"
             animate="visible"
             variants={containerVariants}
@@ -91,6 +91,7 @@ const ProductSummaryComponent = ({
             >
                 <X size={20} />
             </motion.button>
+
             <motion.div className="w-full max-w-4xl flex sm:gap-28 gap-5 lg:gap-40 items-center mb-8" variants={cardVariants}>
                 <motion.button
                     onClick={onBack}
