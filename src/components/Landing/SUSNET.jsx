@@ -66,7 +66,7 @@ const SUSNET = () =>
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Susnet
+              SusNet<sup className="text-[0.4em] font-serif font-semibold align-super tracking-tight">TM</sup>
             </motion.h1>
             <motion.h2
               className="font-semibold text-lg xs:text-2xl text-justify sm:text-start tracking-tighter sm:tracking-wide prose sm:text-3xl text-teal-100 mb-6 leading-relaxed"
@@ -80,9 +80,9 @@ const SUSNET = () =>
               className="text-gray-300 text-sm tracking-tight xs:!text-lg prose text-justify sm:!tracking-tighter leading-relaxed mb-8"
               variants={itemVariants}
             >
-              SusNet is a cutting-edge solution that integrates advanced artificial intelligence with 
-              state-of-the-art hardware to provide a comprehensive energy management system. Our network 
-              includes a variety of wireless devices that work together seamlessly to monitor, control, 
+              SusNet is a cutting-edge solution that integrates advanced artificial intelligence with
+              state-of-the-art hardware to provide a comprehensive energy management system. Our network
+              includes a variety of wireless devices that work together seamlessly to monitor, control,
               and optimize your energy consumption.
             </motion.p>
             <motion.h3

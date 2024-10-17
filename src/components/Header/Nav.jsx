@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 const links = [
   { path: "/", name: "Home" },
   { path: "/documentation", name: "Instructions" },
-  { path: "/environmentalDataAnalytics", name: "SusNet Weather Forecast Tool" },
+  { path: "/environmentalDataAnalytics", name: `SusNet​ᵀᴹ Weather Forecast Tool` },
   { path: "/energybill", name: "Saved Energy/Bill" },
   { path: "/contact", name: "Contact Us" },
 ];

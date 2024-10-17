@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Energybill = () => {
+const Energybill = () =>
+{
   return (
     <div className='min-h-[500px] flex flex-col justify-center'>
       <p className='text-4xl text-center text-red-500 px-4'>
-        Saved Energy and Bill graph and visuals will be here! 😊🙌
+        After installation of SusNet product, your  Energy consumption and estimated bill are visualied here! 😊🙌
       </p>
     </div>
   )

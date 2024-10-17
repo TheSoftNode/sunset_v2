@@ -141,7 +141,7 @@ const EnvironmentalDataAnalytics = () =>
     <div className="bg-white min-h-screen">
       <div className="flex flex-col lg:flex-row bg-[#1B1014] text-white h-[100%]">
         <div className="w-full lg:w-1/2 p-12 flex flex-col justify-center">
-          <h1 className="text-4xl md:text-6xl font-serif mb-4">Susnet</h1>
+          <h1 className="text-4xl md:text-6xl font-serif mb-4">Susnet<sup className="text-[0.4em] font-serif font-semibold align-super tracking-tight">TM</sup></h1>
           <h2 className="text-2xl md:text-4xl font-serif mb-8">Environmental Forecasting Tool</h2>
           <p className="text-lg md:text-2xl font-serif leading-relaxed">
             Welcome to SusNet's AI-powered Weather Forecasting Tool. Gain localized and accurate weather data to optimize energy efficiency and sustainability.

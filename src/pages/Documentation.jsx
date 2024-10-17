@@ -62,9 +62,9 @@ const Documentation = () =>
             ]
         },
         {
-            title: "Connect Devices to Susnet",
+            title: "Connect Devices to SusNet​ᵀᴹ",
             content: [
-                { text: "Scan Susnet QR code using the Tuya App", icon: <QrCode className="w-6 h-6 text-cyan-600" /> },
+                { text: "Scan SusNet​ᵀᴹ QR code using the Tuya App", icon: <QrCode className="w-6 h-6 text-cyan-600" /> },
                 { text: "Your devices will automatically connect", icon: <CheckCircle className="w-6 h-6 text-cyan-600" /> }
             ]
         }

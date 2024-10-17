@@ -44,7 +44,7 @@ const WhyUs = () =>
                         className="text-4xl md:text-5xl font-bold mb-6 text-center text-blue-700"
                         variants={itemVariants}
                     >
-                        Why Choose Susnet?
+                        Why Choose Susnet<sup className="text-[0.4em] font-serif font-semibold align-super tracking-tight">TM</sup>?
                     </motion.h2>
                     <motion.p
                         className="text-xl text-center text-gray-700 mb-16 max-w-3xl mx-auto"

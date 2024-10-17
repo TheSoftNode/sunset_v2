@@ -55,7 +55,7 @@ const Login = () =>
             <form onSubmit={handleSubmit} className='bg-white shadow-lg my-3 mx-auto w-full max-w-sm p-10 rounded-lg border border-transparent transition duration-300 transform hover:scale-105 hover:shadow-xl'>
                 {status && <p className='text-pink-500 text-sm font-semibold p-1 text-center'>{status}</p>}
                 <h1 className='font-bold text-2xl py-4 text-center bg-clip-text text-transparent bg-gradient-to-r from-teal-500 via-green-500 to-blue-500'>
-                    Welcome to SusNet
+                    Welcome to SusNet<sup className="text-[0.8rem] font-serif font-bold align-super tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-500 via-green-500 to-blue-500">TM</sup>
                 </h1>
                 <p className='text-center text-gray-600 mb-4'>
                     A Sustainable AI-Enabled Energy Management Network
