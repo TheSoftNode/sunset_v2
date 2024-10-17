@@ -40,7 +40,7 @@ const Contact = () =>
                             We're here to help and answer any question you might have. We look forward to hearing from you.
                         </p>
 
-                        <form onSubmit={handleSubmit} className="space-y-6">
+                        <form onSubmit={handleSubmit} className="space-y-6 border">
                             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-gray-800 mb-1">Name</label>

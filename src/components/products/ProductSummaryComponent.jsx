@@ -4,6 +4,7 @@ import { CheckIcon, ArrowLeftIcon, XMarkIcon } from '@heroicons/react/16/solid';
 import special from "../../assets/images/special3.png"
 import QuizSection from '../Landing/QuizSection';
 import { X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ProductSummaryComponent = ({
     recommendedProducts,
@@ -206,7 +207,9 @@ const ProductSummaryComponent = ({
                 }}
                 whileTap={{ scale: 0.95 }}
             >
-                Proceed to Checkout
+                <Link to={"https://onlinestore.hitoai.ai/"}>
+                    Proceed to Checkout
+                </Link>
             </motion.button>
         </motion.div>
     );
