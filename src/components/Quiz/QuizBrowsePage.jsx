@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { productData, Data } from '../../assets/Data';
+import { productData, planDetails, Data } from '../../assets/Data';
 import robot3 from '../../assets/images/robot3.jpeg';
 import { toast } from 'react-toastify';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight, RotateCcw, X } from 'lucide-react';
 import QuizSection from '../Landing/QuizSection';
 import ProductSummaryComponent from '../products/ProductSummaryComponent';
-import { determineRecommendation } from '../products/productRecommendationSystem';
 
 const QuizBrowsePage = () =>
 {
@@ -28,7 +27,63 @@ const QuizBrowsePage = () =>
     setProgress((answeredQuestions / Data.length) * 100);
   }, [selectedOptions, Data.length]);
 
-  console.log(selectedOptions)
+
+  // Recommendation system
+  const recommendationSystem = {
+    getRecommendation(answers)
+    {
+      const [floors, rooms, realTimeControl, optimization, support] = answers;
+
+      const plan = this.getPlan(realTimeControl, optimization);
+      const products = this.getProducts(floors, rooms);
+      // const totalPrice = this.calculateTotalPrice(products);
+
+      return {
+        plan: plan,
+        products: products
+        // totalPrice: totalPrice
+      };
+    },
+
+    getPlan(realTimeControl, optimization)
+    {
+      if (realTimeControl === 1 && optimization === 1)
+      {
+        return "Basic";
+      } else if (realTimeControl === 2 && optimization === 2)
+      {
+        return "Standard";
+      } else if (realTimeControl === 2 && optimization === 3)
+      {
+        return "Premium";
+      }
+      return "Basic";
+    },
+
+    getProducts(floors, rooms)
+    {
+      return {
+        1: floors,  // Global Thermostat
+        2: floors,  // IoT Hub
+        3: floors * rooms  // TRVs
+      };
+    },
+
+    // calculateTotalPrice(products) {
+    //   let total = 0;
+    //   Object.entries(products).forEach(([id, count]) => {
+    //     total += productData[id].price * count;
+    //   });
+    //   return total.toFixed(2);
+    // }
+  };
+
+  function getRecommendation(answers)
+  {
+    return recommendationSystem.getRecommendation(answers);
+  }
+
+
 
   const next = () =>
   {
@@ -50,7 +105,7 @@ const QuizBrowsePage = () =>
       setIndex(index + 1);
     } else
     {
-      const recommendation = determineRecommendation(selectedOptions);
+      const recommendation = getRecommendation(selectedOptions);
       setRecommendedProducts(recommendation.products);
       setRecommendedPlan(recommendation.plan);
       setShowProductSummary(true);
@@ -127,6 +182,7 @@ const QuizBrowsePage = () =>
       recommendedProducts={recommendedProducts}
       recommendedPlan={recommendedPlan}
       selectedOptions={selectedOptions}
+      planDetails={planDetails}
       productData={productData}
       onBack={() => setShowProductSummary(false)}
     />;

@@ -42,6 +42,7 @@ const QuizBrowsePage = () =>
         }
       }
     }
+  }
 
 
     // Function to go back to the previous question
