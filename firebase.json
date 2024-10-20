@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "target": "susnet-platform",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
